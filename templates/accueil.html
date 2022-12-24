@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil</title>
+  </head>
+  <body>
+    <div style="margin: 15%">
+      <h1>Bienvenue sur la plateforme Gueye Services</h1>
+
+      <form action="{{url_for('calcul')}}" method="post">
+        <input type="text" name="position" placeholder="position" />
+        <input type="text" name="destination" placeholder="Destination" />
+        <input type="submit" value="Vérifier" />
+      </form>
+      <p>Exemple: Dakar, Fatick, Tambacounda...</p>
+    </div>
+  </body>
+</html>
